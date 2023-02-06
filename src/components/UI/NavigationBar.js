@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { BulbFilled, FileFilled, DownOutlined, UpOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import {
+  BulbFilled,
+  FileFilled,
+  DownOutlined,
+  UpOutlined,
+} from "@ant-design/icons";
+import logo from "../../assets/icon.png";
 import styles from "./NavigationBar.module.css";
 
 const NavigationBar = () => {
@@ -9,55 +16,83 @@ const NavigationBar = () => {
     setShowBurgerMenu(!showBurgerMenu);
   };
   return (
-      <header className={styles.headerContainer}>
-        <nav className={styles.fullNavBar}>
-          <ul className={styles.navBarItemsContainer}>
-            <li className={styles.fullNavBarItem}>Home</li>
-            <li className={styles.fullNavBarItem}>About</li>
-            <li className={styles.fullNavBarItem}>Contact</li>
-            <li className={styles.fullNavBarItem}>Team</li>
-          </ul>
-          <ul className={styles.navBarItemsContainer}>
-            <li className={styles.horizontalLine}></li>
-            <li className={styles.fullNavBarItem}>
+    <header className={styles.headerContainer}>
+      <nav className={styles.fullNavBar}>
+        <ul className={styles.navBarItemsContainer}>
+          <li>
+            <img src={logo} alt="Imagine Software" width="72px" />
+          </li>
+          <li className={styles.horizontalLine}></li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/">Home</Link>
+          </li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/about">About</Link>
+          </li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/contact">Contact</Link>
+          </li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/team">Team</Link>
+          </li>
+        </ul>
+        <ul className={styles.navBarItemsContainer}>
+          <li className={styles.horizontalLine}></li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/joinus">
               <BulbFilled className={styles.icon} />
-            </li>
-            <li className={styles.fullNavBarItem}>
+            </Link>
+          </li>
+          <li className={styles.fullNavBarItem}>
+            <Link className={styles.removeLink} to="/projects">
               <FileFilled className={styles.icon} />
-            </li>
-            <li className={styles.fullNavBarItem}> </li>
-          </ul>
+            </Link>
+          </li>
+          <li className={styles.fullNavBarItem}> </li>
+        </ul>
 
-          <ul className={styles.burgerNavBarButtons}>
-            <li>
-              <h3>Imagine Software</h3>
-            </li>
-            <li>
-              <button
-                className={styles.burgerButton}
-                onClick={showBurgerManuHandler}
-              >
-                { !showBurgerMenu ? <DownOutlined /> : <UpOutlined /> }
-              </button>
-            </li>
-          </ul>
-        </nav>
+        <ul className={styles.burgerNavBarButtons}>
+          <li>
+            <h3>Imagine Software</h3>
+          </li>
+          <li>
+            <button
+              className={styles.burgerButton}
+              onClick={showBurgerManuHandler}
+            > 
+              {!showBurgerMenu ? <DownOutlined /> : <UpOutlined />}
+            </button>
+          </li>
+        </ul>
+      </nav>
 
-        {showBurgerMenu && (
-          <ul className={styles.burgerNavBar}>
-            <li className={styles.burgerNavItem}>Home</li>
-            <li className={styles.burgerNavItem}>About</li>
-            <li className={styles.burgerNavItem}>Contact</li>
-            <li className={styles.burgerNavItem}>Team</li>
-            <li className={styles.burgerNavItem}>
-              <BulbFilled className={styles.icon} />
-            </li>
-            <li className={styles.burgerNavItem}>
-              <FileFilled className={styles.icon} />
-            </li>
-          </ul>
-        )}
-      </header>
+      {showBurgerMenu && (
+        <ul className={styles.burgerNavBar}>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/">Home</Link>
+          </li>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/about">About</Link>
+          </li>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/contact">Contact</Link>
+          </li>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/team">Team</Link>
+          </li>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/joinus">
+              <span className={styles.icon}>Projects</span>
+            </Link>
+          </li>
+          <li className={styles.burgerNavItem}>
+            <Link className={styles.removeLink} to="/projects">
+              <span className={styles.icon}>Join Us</span>
+            </Link>
+          </li>
+        </ul>
+      )}
+    </header>
   );
 };
 
