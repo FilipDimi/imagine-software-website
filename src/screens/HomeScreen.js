@@ -3,7 +3,7 @@ import styles from "./HomeScreen.module.css";
 
 const HomeScreen = () => {
   return (
-    <div className={styles.test}>
+    <div className={styles.container}>
       <div className={styles.mainContainer}></div>
       <div className={styles.whiteContainer}>
         <h1 className={styles.headingOne}>Imagine Software</h1>

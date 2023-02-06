@@ -32,6 +32,9 @@
   height: 70px;
   margin-top: 40px;
   border-radius: 20px;
+  border-width: 1.5px;
+  border-color: #282c34;
+  border-style: solid;
 }
 
 .navBarItemsContainer {
@@ -92,6 +95,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     list-style-type: none;
+    border-width: 1.5px;
+    border-color: #282c34;
+    border-style: solid;
   }
 }
 
