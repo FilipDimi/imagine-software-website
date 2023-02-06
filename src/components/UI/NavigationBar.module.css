@@ -1,98 +1,98 @@
-.appHeader {
-    background-color: #282c34;
-    min-height: 50vh;
-    color: white;
-    margin-top: -20px;
+.headerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  color: #ffc000;
+  font-size: 1.4rem;
+}
+
+.horizontalLine {
+  border-left: 1px solid #282c34;
+  height: 30px;
+}
+
+/* Full Navigation Bar */
+.fullNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #fff;
+  color: #282c34;
+  width: 90%;
+  height: 70px;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.navBarItemsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  font-size: 1.1rem;
+}
+
+.fullNavBarItem {
+  padding: 20px 25px;
+}
+
+/* Burger Navigation Bar  */
+.burgerNavBarButtons {
+  list-style-type: none;
+  width: 85%;
+  color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.burgerButton {
+  background-color: #282c34;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 0px;
+}
+
+@media only screen and (max-width: 820px) {
+  .headerContainer {
     display: flex;
-    justify-content: center;
-    background-image: url("../../assets/icon.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:contain;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .icon {
-    color: #ffc000;
-    font-size: 1.4rem;
-  }
-  
-  .horizontalLine {
-    border-left: 1px solid #282c34;
-    height: 30px;
-  }
-  
-  /* Full Navigation Bar */
-  .fullNavBar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #fff;
-    color: #282c34;
-    width: 90%;
-    height: 70px;
-    margin-top: 40px;
-    border-radius: 20px;
-  }
-  
   .navBarItemsContainer {
-    display: flex;
-    flex-direction: row;
+    display: none;
+  }
+
+  .appHeader {
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    list-style-type: none;
-    font-size: 1.1rem;
   }
-  
-  .fullNavBarItem {
-    padding: 20px 25px;
-  }
-  
-  /* Burger Navigation Bar  */
-  .burgerNavBarButtons {
-    list-style-type: none;
-    width: 85%;
+
+  .burgerNavBar {
+    height: 150px;
+    background-color: #000;
     color: #282c34;
+    width: 82%;
+    margin-top: 13px;
+    border-radius: 20px;
+    min-height: 250px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
   }
-  
-  .burgerButton {
-    background-color: #282c34;
-    color: #fff;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 0px;
-  
+}
+
+@media only screen and (min-width: 820px) {
+  .burgerNavBar,
+  .burgerNavBarButtons {
+    display: none;
   }
-  
-  @media only screen and (max-width: 820px) {
-    .navBarItemsContainer {
-      display: none;
-    }
-  
-    .appHeader {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-    }
-  
-    .burgerNavBar {
-      height: 150px;
-      background-color: #fff;
-      color: #282c34;
-      width: 82%;
-      margin-top: 13px;
-      border-radius: 20px;
-      min-height: 250px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      list-style-type: none;
-    }
-  }
-  
-  @media only screen and (min-width: 820px) {
-    .burgerNavBar, .burgerNavBarButtons {
-      display: none;
-    }
-  }
+}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BulbFilled, FileFilled } from "@ant-design/icons";
+import { BulbFilled, FileFilled, DownOutlined, UpOutlined } from "@ant-design/icons";
 import styles from "./NavigationBar.module.css";
 
 const NavigationBar = () => {
@@ -9,8 +9,7 @@ const NavigationBar = () => {
     setShowBurgerMenu(!showBurgerMenu);
   };
   return (
-    <div className={styles.mainHeaderContainer}>
-      <header className={styles.appHeader}>
+      <header className={styles.headerContainer}>
         <nav className={styles.fullNavBar}>
           <ul className={styles.navBarItemsContainer}>
             <li className={styles.fullNavBarItem}>Home</li>
@@ -38,7 +37,7 @@ const NavigationBar = () => {
                 className={styles.burgerButton}
                 onClick={showBurgerManuHandler}
               >
-                =
+                { !showBurgerMenu ? <DownOutlined /> : <UpOutlined /> }
               </button>
             </li>
           </ul>
@@ -59,7 +58,6 @@ const NavigationBar = () => {
           </ul>
         )}
       </header>
-    </div>
   );
 };
 
