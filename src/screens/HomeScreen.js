@@ -32,6 +32,43 @@ const HomeScreen = () => {
           </p>
         </div>
       </div>
+      <div className={styles.goalContainerHeading}>
+        <h2 className={styles.goalHeading}>Our Goals</h2>
+      </div>
+      <div className={styles.goalsContainer}>
+        <div className={styles.individualGoalContainer}>
+          <h3>Agile Environment</h3>
+          <p>
+            Agile is a project management method that prioritizes flexibility
+            and collaboration in software development. It is based on the Agile
+            Manifesto, which outlines four core values: individuals and
+            interactions over processes and tools, working software over
+            comprehensive documentation, customer collaboration over contract
+            negotiation, and responding to change over following a plan.
+          </p>
+        </div>
+        <div className={styles.individualGoalContainer}>
+          <h3>Real Projects</h3>
+          <p>
+            One of the key benefits of an Agile environment is its ability to
+            handle changing requirements and shifting priorities. Rather than
+            adhering to a rigid plan, Agile teams are able to respond to new
+            information and adjust their approach as needed. This is
+            particularly important in today's fast-paced business world, where
+            requirements and technologies can change rapidly.
+          </p>
+        </div>
+        <div className={styles.individualGoalContainer}>
+          <h3>Have Fun</h3>
+          <p>
+            In conclusion, an Agile environment is a dynamic and flexible
+            approach to software development that prioritizes collaboration,
+            adaptation, and continuous delivery of value. While it can be
+            challenging, it is a valuable method for organizations looking to
+            stay ahead in a rapidly changing world.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
