@@ -19,6 +19,9 @@ function App() {
         <Route path ="/team" element={<TeamScreen />} />
         <Route path ="/about" element={<AboutScreen />} />
       </Routes>
+      <footer style={{backgroundColor: "#000", height: "150px"}}>
+
+      </footer>
     </>
   );
 }

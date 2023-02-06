@@ -88,6 +88,31 @@
     width: 33%;
 }
 
+/* Side Banner */
+.yellowContainer {
+    background-color: #ffc400;
+    min-height: 50vh;
+    margin-top: -20px;
+    padding-top: 50px;
+}
+.sideBannerContainer {
+    background-color: #fff;
+    width: 75%;
+    padding: 20px 35px;
+    margin-bottom: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.smallerSideBannerContainer {
+    background-color: #fff;
+    width: 55%;
+    padding: 20px 35px;
+    margin-bottom: 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
 
 @media only screen and (max-width: 820px) {
   .headingOneContainer {
