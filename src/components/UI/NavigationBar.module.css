@@ -8,6 +8,11 @@
 
 .icon {
   color: #ffc000;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  color: #282c34;
 }
 
 .horizontalLine {
@@ -18,6 +23,12 @@
 .removeLink {
   text-decoration: none;
   color: #282c34;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.removeLink:hover {
+  font-weight: bold;
 }
 
 
