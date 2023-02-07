@@ -1,7 +1,19 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./HomeScreen.module.css";
+import RedirectButton from "../components/UI/RedirectButton";
 
 const HomeScreen = () => {
+  let navigate = useNavigate();
+
+  const redirectToJoinUs = () => {
+    navigate('/joinus');
+  }
+
+  const redirectToTeam = () => {
+    navigate('/team');
+  }
+
   return (
     <>
       <div className={styles.container}>
@@ -75,20 +87,22 @@ const HomeScreen = () => {
       </div>
       <div className={styles.yellowContainer}>
         <div className={styles.smallerSideBannerContainer}>
-          <h3>Join Us</h3>
+          <h3>Join the Team</h3>
           <p>
             In conclusion, an Agile environment is a dynamic and flexible
             approach to software development that prioritizes collaboration,
             adaptation, and continuous delivery of value
           </p>
+          <RedirectButton title="Join Us" onClick={redirectToJoinUs} />
         </div>
         <div className={styles.sideBannerContainer}>
-          <h3>Meet Our Team</h3>
+          <h3>This is Us</h3>
           <p>
             In conclusion, an Agile environment is a dynamic and flexible
             approach to software development that prioritizes collaboration,
             adaptation, and continuous delivery of value
           </p>
+          <RedirectButton title="Meet Us" onClick={redirectToTeam} />
         </div>
       </div>
     </>

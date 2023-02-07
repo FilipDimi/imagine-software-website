@@ -6,6 +6,7 @@ import ContactScreen from "./screens/ContactScreen";
 import JoinUsScreen from "./screens/JoinUsScreen";
 import ProjectScreen from "./screens/ProjectScreen";
 import TeamScreen from "./screens/TeamScreen";
+import Footer from "./components/UI/Footer";
 
 function App() {
   return (
@@ -19,9 +20,7 @@ function App() {
         <Route path ="/team" element={<TeamScreen />} />
         <Route path ="/about" element={<AboutScreen />} />
       </Routes>
-      <footer style={{backgroundColor: "#000", height: "150px"}}>
-
-      </footer>
+      <Footer />
     </>
   );
 }

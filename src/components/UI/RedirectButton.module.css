@@ -1,0 +1,21 @@
+.button {
+    background-color: #282c34;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: 2px solid #282c34;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #ffc000;
+    color: #282c34;
+    border: 2px solid #ffc000;
+}
+
+.button:active {
+    background-color: #ba8c02;
+    color: #282c34;
+}

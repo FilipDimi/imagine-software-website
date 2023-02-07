@@ -1,0 +1,26 @@
+.footer {
+    background-color: #282c34;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    color: aliceblue;
+    padding: 10px;
+}
+
+.footerBlock {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMediaButton {
+    background-color: #ffc400;
+    border-radius: 10px;
+    padding: 5px 15px;
+    font-size: 1.25rem;
+    border-color: #282c34;
+    margin: 0px 5px;
+}
