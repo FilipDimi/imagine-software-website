@@ -1,5 +1,5 @@
-import NavigationBar from "./components/UI/NavigationBar";
 import { Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/UI/NavigationBar";
 import HomeScreen from "./screens/HomeScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
@@ -7,6 +7,7 @@ import JoinUsScreen from "./screens/JoinUsScreen";
 import ProjectScreen from "./screens/ProjectScreen";
 import TeamScreen from "./screens/TeamScreen";
 import Footer from "./components/UI/Footer";
+
 
 function App() {
   return (
