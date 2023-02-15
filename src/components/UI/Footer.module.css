@@ -3,6 +3,7 @@
     min-height: 30vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 15px;
     color: aliceblue;
@@ -30,6 +31,7 @@
     border-color: #282c34;
     margin: 0px 5px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .socialMediaButton:hover {

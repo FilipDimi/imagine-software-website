@@ -25,19 +25,6 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.footerBlock}>
-        
-        <ul>
-        <h2>Explore</h2>
-          <li className={styles.footerNavLinkItem}>Home</li>
-          <li className={styles.footerNavLinkItem}>About Us</li>
-          <li className={styles.footerNavLinkItem}>Contact</li>
-          <li className={styles.footerNavLinkItem}>Home</li>
-          <li className={styles.footerNavLinkItem}>Our Team</li>
-          <li className={styles.footerNavLinkItem}>Projects</li>
-          <li className={styles.footerNavLinkItem}>Join Us</li>
-        </ul>
-      </div>
-      <div className={styles.footerBlock}>
         <img src={logo} alt="Imagine Software" style={{ width: "380px" }} />
       </div>
     </footer>

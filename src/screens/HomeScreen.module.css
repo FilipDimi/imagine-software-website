@@ -46,7 +46,7 @@
 .headingOneContainer {
   display: flex;
   flex-direction: row;
-  padding: 10px;
+  padding: 10px 30px;
   text-align: justify;
   text-justify: inter-word;
   min-height: 25vh;
@@ -91,7 +91,7 @@
 /* Side Banner */
 .yellowContainer {
   background-color: #ffc400;
-  min-height: 35vh;
+  min-height: 60vh;
   margin-top: -20px;
   padding-top: 50px;
 }
@@ -136,5 +136,6 @@
 
   .yellowContainer {
     min-height: 80vh;
+    margin-bottom: -30px;
   }
 }
